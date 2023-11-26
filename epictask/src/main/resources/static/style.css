@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,400;1,500&family=Luckiest+Guy&family=Nunito+Sans:ital,wght@0,200;1,200&family=Roboto:wght@100&display=swap');
+*{
+   
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #012E40;
+    /* background: linear-gradient(120deg, #012E40 0%, #3CA6A6 100%); */
+    
+}
+
+h1{
+    text-align:  center;
+    color: #F2E3D5;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+}
+
+.actions2{
+    padding: 10px;
+}
+.actions1{
+    padding: 8px;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 2px;
+    font-family: 'Nunito Sans', sans-serif;
+    
+    
+}
+.marca{
+    font-weight: bold;
+    
+}
+
+
+
+p, label{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 2px;
+    padding: 3px 3px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+h2, p{
+    border-bottom: 2px solid #012E40;
+
+}
+
+.content{
+    color:white;
+    padding: 18px;
+    margin: 20px;
+    font-size: 16px;
+    text-align:center;
+    background-color: #026773;
+    border: 20px;
+    border-radius: 18px;
+	display: flex;
+	justify-content: space-around;
+	
+	align-items: center;
+	
+
+}
+
+.content2{
+    color:white;
+    padding: 18px;
+    margin: 20px;
+    font-size: 16px;
+    text-align:center;
+    background-color: #026773;
+    border: 20px;
+    border-radius: 18px;
+	display: flex;
+	justify-content: space-around;
+	
+	width: 510px;
+    margin-left: auto; /*vai deixa a tabela centralizada*/
+    margin-right: auto;
+    
+	 
+
+}
+
+
+
+form{
+    position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	
+}
+
+input, textarea{
+    background-color: #F2E3D5;
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
+    border: 3px solid #012E40;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 10px; /*vai dar um espaço dentro do input*/
+    font-size: 18px;
+    margin: 2px;
+}
+textarea{
+    padding-top: 10px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+input:hover{
+    border: 3px solid red;
+}
+textarea:hover{
+    border: 3px solid red;
+}
+
+.card-loja{
+    background-color: #3CA6A6;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    
+}
+.lojas{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btn2{
+    background-color: red;
+    color: white;
+    border: 2px solid #026773;
+    border-radius: 18px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 2px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn1{
+    background-color: #00b60f;
+    color: white;
+    border: 2px solid #026773;
+    border-radius: 18px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+button{
+    cursor: pointer;
+    background-color: #00b60f;
+    color: white;
+    border-radius: 18px;
+    border: 2px solid #026773;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.btn_v{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-radius: 18px;
+    border: 2px solid #026773;
+    font-size: 15px;
+    padding: 5px;
+
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Fomulario de perdido</title>
+</head>
+<body>
+    <h1>Formulario de Perdido</h1>
+
+    <div class="content2">
+        <form th:action="${'/loja/new'}" method="post" th:object="${loja}">
+            <label for="marca">Marca</label>
+            <input type="text" th:field="*{marca}">
+            <span th:errors="*{marca}"></span>
+
+            <label for="tituloProd">Titulo Produto</label>
+            <input type="text" th:field="*{tituloProd}">
+            <span th:errors="*{tituloProd}"></span>
+
+            <label for="tamanho">Tamanho</label>
+            <input type="number" th:field="*{tamanho}">
+            <span th:errors="*{tamanho}"></span>
+
+            <label for="quantidade">Quantidade</label>
+            <input type="number" th:field="*{quantidade}">
+            <span th:errors="*{quantidade}"></span>
+
+            <label for="genero">Genero</label>
+            <input type="text" th:field="*{genero}">
+            <span th:errors="*{genero}"></span>
+
+            <label for="cor">Cor</label>
+            <input type="text" th:field="*{cor}">
+            <span th:errors="*{cor}"></span>
+
+            <label for="descricao">Descrição</label>
+            <textarea th:field="*{descricao}"></textarea>
+            <span th:errors="*{descricao}"></span>
+
+            <label for="material">Material</label>
+            <textarea th:field="*{material}"></textarea>
+            <span th:errors="*{material}"></span>
+
+            <div class="actions2">
+                <a href="/loja" class="btn2">cancelar perdido</a>
+                <button class="btn">salvar</button>
+            </div>
+
+        </form>
+    </div>
+    ,,
+</body>
+</html>

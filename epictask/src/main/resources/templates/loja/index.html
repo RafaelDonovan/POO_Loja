@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Calçado</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Loja de Calçados</h1>
+    
+    <a href="/loja/new" class="btn1">Nova Perdido</a>
+
+    <div class="content">
+        <div class="lojas">
+            <div class="card-loja" th:each="loja : ${lojas}">
+                <h2 th:text=" 'Marca: ' + ${loja.marca}" class="marca"></h2>
+                <p th:text=" 'Titulo do Produto: ' + ${loja.tituloProd}"></p>
+                <p th:text=" 'Tamanho: ' + ${loja.tamanho}"></p>
+                <p th:text=" 'Quantidade: ' + ${loja.quantidade}"></p>
+                <p th:text=" 'Genero: ' + ${loja.genero}"></p>
+                <p th:text=" 'Cor: ' + ${loja.cor}"></p>
+                <p th:text=" 'Descrição: ' + ${loja.descricao}"></p>
+                <p th:text=" 'Material: ' + ${loja.material}"></p>
+
+                <div class="actions1">
+                    <form th:action="@{'/loja/{id}'(id=${loja.id})}" th:method="delete">
+                        <button class="btn_v">Apagar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
